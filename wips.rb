@@ -5,21 +5,21 @@
 class Wips < Formula
   desc "wips-cli is a command line tool for tracking your daily work."
   homepage "https://github.com/rynskrmt/wips-cli"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.6/wips-cli_Darwin_x86_64.tar.gz"
-      sha256 "a47d41a69a95cb0f0132b305e5750f225f4858030a49eb382e192094c4553b59"
+      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.7/wips-cli_Darwin_x86_64.tar.gz"
+      sha256 "e656460423880a4455d67091afc6ba86e917d60076c41dfa3860c9f939e369aa"
 
       def install
         bin.install "wip"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.6/wips-cli_Darwin_arm64.tar.gz"
-      sha256 "1e42da6f4b84012c6f17ba957d5852ba0600fce1690964e88608d2680acf08c5"
+      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.7/wips-cli_Darwin_arm64.tar.gz"
+      sha256 "96c9643731d1fce99ae90d1017807dd8e799eb092e9ae20fb06cb059dd9d64df"
 
       def install
         bin.install "wip"
@@ -29,15 +29,15 @@ class Wips < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.6/wips-cli_Linux_x86_64.tar.gz"
-      sha256 "2447da1b640e85223241c59d5c5553b9d337483fcdacc2a5b8cb94daab2d38bf"
+      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.7/wips-cli_Linux_x86_64.tar.gz"
+      sha256 "53edeef8330ab2bca25aab92c497cebe035a6a925329ece75907c98127f99c8c"
       def install
         bin.install "wip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.6/wips-cli_Linux_arm64.tar.gz"
-      sha256 "b97163dda46b03d0fbabd6d00c042893203a4228babe2c0d068bc5aded83e32c"
+      url "https://github.com/rynskrmt/wips-cli/releases/download/v0.0.7/wips-cli_Linux_arm64.tar.gz"
+      sha256 "db31f13687a1dbcb839e4be0e9ea3f6fb495c340cbe9dcefdfa80a194a8d0167"
       def install
         bin.install "wip"
       end
